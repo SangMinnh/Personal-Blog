@@ -1,0 +1,19 @@
+.main {
+}
+.main__wrap {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 10px;
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+.main__title {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+.main__title > div {
+  /* background-color: yellow; */
+}
