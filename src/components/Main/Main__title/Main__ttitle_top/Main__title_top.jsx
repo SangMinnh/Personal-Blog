@@ -1,32 +1,35 @@
 import React from "react"
 import PropTypes from "prop-types"
 import "./Main__title_top.css"
-import image from "./top.jpg"
 
-Main__title_top.propTypes = {}
+Main__title_top.propTypes = {
+  title__top_item: PropTypes.object
+}
+Main__title_top.defaultProps = {
+  title__top_item: null
+}
 
 function Main__title_top(props) {
+  const { title__top_item } = props
   return (
-    <div class="title__top">
-      <div class="title__top-wrap">
-        <div class="title__top-background">
+    <div className="title__top">
+      <div className="title__top-wrap">
+        <div className="title__top-background">
           <img
-            src="https://scontent.fsgn4-1.fna.fbcdn.net/v/t1.6435-9/157250530_2807786612768070_3203283049516010977_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=pkWDL0bXJkQAX8ae8sM&_nc_ht=scontent.fsgn4-1.fna&oh=99990c2fb36f75f5b64ed631e61d24af&oe=609E674E"
+            className="zoom_image"
+            src={title__top_item.imageUrl}
             alt=""
           ></img>
         </div>
-        <div class="title__top-info">
-          <div class="info__top">
-            <div class="info__date">React JS | 10 Feb 2021</div>
-            <div class="info__title">Top NodeJS Frameworks to use in 2021</div>
-            <div class="info__detail">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
-              sint nesciunt, quas omnis possimus quibusdam pariatur modi
-              sapiente praesentium maiores. A, magnam excepturi. Ullam magni
-              nihil animi odio! Minus, consequuntur?
+        <div className="title__top-info">
+          <div className="info__top">
+            <div className="info__date">React JS | 10 Feb 2021</div>
+            <div className="info__title">
+              Top NodeJS Frameworks to use in 2021
             </div>
+            <div className="info__detail">{title__top_item.description}</div>
           </div>
-          <div class="info__readmore">Read more | 10 mins read</div>
+          <div className="info__readmore">Read more | 10 mins read</div>
         </div>
       </div>
     </div>

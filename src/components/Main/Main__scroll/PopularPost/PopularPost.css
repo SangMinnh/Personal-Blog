@@ -1,0 +1,16 @@
+.main__scroll-post {
+  font-family: "Montserrat", sans-serif;
+  padding: 0 15px;
+  margin-top: 40px;
+}
+.main__scroll-post h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  margin: 15px 0 0px;
+}
+.main__scroll-post .post__list {
+  /* display: block; */
+  width: 100%;
+  margin: 0 0;
+}
