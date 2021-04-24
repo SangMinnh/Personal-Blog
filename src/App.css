@@ -10,6 +10,7 @@ a {
 ul,
 li {
   list-style: none;
+  padding-inline-start: 0px;
 }
 .run-line::after {
   content: "";
@@ -30,7 +31,14 @@ li {
 .run-line:hover::after {
   /* transform: scale(); */
   width: 100%;
-  left: 0;
+  /* left: 0; */
   visibility: visible;
   opacity: 1;
+}
+.zoom_image {
+  transition: all 0.3s linear;
+}
+.zoom_image:hover {
+  /* transform: translateY(-10px); */
+  transform: scale(1.05);
 }

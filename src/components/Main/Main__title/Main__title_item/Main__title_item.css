@@ -1,5 +1,7 @@
 .title__item {
   padding-bottom: 10px;
+  /* background-color: yellow ; */
+  margin-bottom: 40px;
 }
 .title__item .title__item-wrap {
   height: 500px;
@@ -9,14 +11,19 @@
 }
 .title__item .title__item-wrap .title__item-background {
   height: 60%;
+  overflow: hidden;
+  border-radius: 10px;
   /* position: relative;; */
 }
 .title__item .title__item-wrap .title__item-background img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
 }
+/* .title__item .title__item-wrap .title__item-background img:hover {
+  transform: translateY(-10px);
+  transform: scale(1.05);
+} */
 
 .title__item .title__item-wrap .title__item-info {
   display: flex;

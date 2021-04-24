@@ -1,4 +1,10 @@
 .header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  background-color: whitesmoke;
 }
 .header .header__wrap {
   display: flex;

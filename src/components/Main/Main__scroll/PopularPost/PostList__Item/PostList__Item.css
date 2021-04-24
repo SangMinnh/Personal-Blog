@@ -1,0 +1,19 @@
+.item__post-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.item__post-wrap .post__order {
+  width: 20%;
+  font-size: 54px;
+  font-weight: 700;
+  color: rgba(179, 179, 179, 1);
+}
+.item__post-wrap .post__detail {
+  width: 75%;
+}
+.item__post-wrap .post__detail .post__detail-top {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
