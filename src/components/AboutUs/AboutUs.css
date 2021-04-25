@@ -38,12 +38,88 @@
   line-height: 30px;
 }
 .aboutus .aboutus__detail .aboutus__detail-logo {
+  text-align: center;
+  margin-top: 50px;
+}
+.aboutus .aboutus__detail .aboutus__detail-logo a {
   font-weight: 400;
-  font-size: 80px;
+  font-size: 100px;
   color: rgba(18, 201, 157, 1);
   line-height: 49px;
   align-items: center;
   font-family: Ribeye;
   text-align: center;
-  margin-top: 40px;
+  /* margin-top: 40px; */
+}
+.aboutus .aboutus__detail .aboutus__detail-team {
+  margin-top: 70px;
+  text-align: center;
+  border-top: 2px solid black;
+}
+.aboutus .aboutus__detail .aboutus__detail-team .info__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 75px;
+}
+.aboutus .aboutus__detail .aboutus__detail-team .info__wrap .team__info {
+  width: 350px;
+  overflow: hidden;
+}
+.aboutus
+  .aboutus__detail
+  .aboutus__detail-team
+  .info__wrap
+  .team__info
+  .team__info-top {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.aboutus .aboutus__detail .aboutus__detail-team .team__info img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+
+.aboutus
+  .aboutus__detail
+  .aboutus__detail-team
+  .info__wrap
+  .team__info
+  .team__info-bottom {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+.aboutus
+  .aboutus__detail
+  .aboutus__detail-team
+  .info__wrap
+  .team__info
+  .team__info-bottom
+  span {
+  margin: 15px 0;
+}
+.aboutus
+  .aboutus__detail
+  .aboutus__detail-team
+  .info__wrap
+  .team__info
+  .team__info-bottom
+  p {
+  margin: 15px 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.aboutus
+  .aboutus__detail
+  .aboutus__detail-team
+  .info__wrap
+  .team__info
+  .team__info-bottom
+  .bottom__contact
+  span {
+  padding: 0 5px;
 }
