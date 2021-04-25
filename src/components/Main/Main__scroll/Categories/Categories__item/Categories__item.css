@@ -1,0 +1,17 @@
+.categories__list-item {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  margin: 13px 0;
+}
+.categories__list-item span {
+}
+.categories__list-item .item__number {
+  width: 25px;
+  height: 25px;
+  background-color: rgba(18, 201, 157, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
