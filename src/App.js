@@ -12,14 +12,16 @@ import {
 import AboutUs from "./components/AboutUs/AboutUs"
 import Home from "./components/Home/Home"
 import History from "./components/History/History"
+import Signin from "./components/Sign in/Signin"
 function App(props) {
   return (
     <Router>
       <Header></Header>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={AboutUs} />
+        <Route exact path="/about" component={AboutUs} />
         <Route path="/history" component={History} />
+        <Route path="/signin" component={Signin} />
       </Switch>
     </Router>
   )

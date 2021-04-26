@@ -14,7 +14,7 @@ function Header(props) {
         <div class="container">
           <div class="header__wrap">
             <div class="header__logo">
-              <a>Minidum</a>
+              <Link to="/">Minidum</Link>
             </div>
             <div class="header__menu">
               <div class="header__menu-list">
@@ -42,7 +42,7 @@ function Header(props) {
                 </ul>
               </div>
               <div class="header__menu-sign">
-                <a href="">Sign in</a>
+                <Link to="/signin">Sign in</Link>
               </div>
             </div>
           </div>

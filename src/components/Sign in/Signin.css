@@ -1,0 +1,95 @@
+.signin {
+  padding: 50px 0 87px;
+  background-color: rgba(18, 201, 157, 1);
+  min-height: 90vh;
+  font-family: "Montserrat", sans-serif;
+}
+.signin__detail form {
+  width: 40vw;
+  margin: 0 auto;
+  position: relative;
+}
+.signin .signin__head {
+  text-align: center;
+  margin-top: 70px;
+}
+.signin .signin__head h1 {
+  font-size: 55px;
+  font-weight: 600;
+  color: aliceblue;
+}
+.signin .signin__detail {
+  text-align: center;
+}
+.signin .signin__detail .signin__detail-input {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #6c757d;
+  font-size: 18px;
+}
+.signin .signin__detail .signin__detail-input input {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 20px;
+  color: #495057;
+  padding: 1px 6px;
+  outline: none;
+}
+.signin .signin__detail .signin__detail-input a {
+  position: relative;
+}
+.signin .signin__detail .signin__detail-button {
+  margin: 25px 0px;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #fed700;
+  border-color: #fed700;
+  border-radius: 4.8px;
+  color: #384062;
+  font-size: 20px;
+  text-align: center;
+  min-width: 153px;
+  max-width: 25%;
+  min-height: 50px;
+  transition: all 0.3s ease-in-out;
+  padding: 10px 10px;
+  margin: 0 20px;
+}
+.btn:hover {
+  background-color: white;
+  border-color: white;
+}
+
+/* sign__deatil:after */
+.signin__detail form::after {
+  content: "";
+  height: 1px;
+  position: absolute;
+  width: inherit;
+  background-color: black;
+  bottom: -20px;
+  left: 0;
+}
+
+.signin__action {
+  margin-top: 40px;
+}
+.signin__action .list-button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signin__action .list-button .btn {
+  font-size: 18px;
+  min-width: 150px;
+}
+.signin__action .list-button .btn i {
+  margin-right: 5px;
+}
+.signin__action .list-button .btn i.fa-google {
+  color: red;
+}

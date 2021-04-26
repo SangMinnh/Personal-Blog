@@ -54,7 +54,7 @@ function AboutUs(props) {
             </p>
           </div>
           <div className="aboutus__detail-logo">
-            <a href="/"> Midium</a>
+            <Link to="/"> Midium</Link>
           </div>
           <div className="aboutus__detail-team">
             <div>
