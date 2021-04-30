@@ -9,41 +9,39 @@ Header.propTypes = {}
 
 function Header(props) {
   return (
-    <div>
-      <div class="header">
-        <div class="container">
-          <div class="header__wrap">
-            <div class="header__logo">
-              <Link to="/">Minidum</Link>
+    <div class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <div class="header__logo main-logo">
+            <Link to="/">Minidum</Link>
+          </div>
+          <div class="header__menu">
+            <div class="header__menu-list">
+              <ul class="list__header">
+                <li class="list__header-item run-line">
+                  <Link to="/" class="item__link">
+                    HOME
+                  </Link>
+                </li>
+                <li class="list__header-item run-line">
+                  <Link to="/cate" class="item__link">
+                    CATEGORIES
+                  </Link>
+                </li>
+                <li class="list__header-item run-line">
+                  <Link to="/about" class="item__link">
+                    ABOUT US
+                  </Link>
+                </li>
+                <li class="list__header-item run-line">
+                  <Link to="/history" class="item__link">
+                    HISTORY
+                  </Link>
+                </li>
+              </ul>
             </div>
-            <div class="header__menu">
-              <div class="header__menu-list">
-                <ul class="list__header">
-                  <li class="list__header-item run-line">
-                    <Link to="/" class="item__link">
-                      HOME
-                    </Link>
-                  </li>
-                  <li class="list__header-item run-line">
-                    <a href="" class="item__link">
-                      CATEGORIES
-                    </a>
-                  </li>
-                  <li class="list__header-item run-line">
-                    <Link to="/about" class="item__link">
-                      ABOUT US
-                    </Link>
-                  </li>
-                  <li class="list__header-item run-line">
-                    <Link to="/history" class="item__link">
-                      HISTORY
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div class="header__menu-sign">
-                <Link to="/signin">Sign in</Link>
-              </div>
+            <div class="header__menu-sign">
+              <Link to="/signin">Sign in</Link>
             </div>
           </div>
         </div>

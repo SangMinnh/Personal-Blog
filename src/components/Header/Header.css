@@ -11,14 +11,14 @@
 }
 .header .header__wrap .header__logo {
   width: 35%;
-  align-items: center;
+  /* align-items: center; */
 }
 .header .header__wrap .header__logo a {
-  color: rgba(18, 201, 157, 1);
+  /* color: rgba(18, 201, 157, 1);
   font-family: Ribeye;
   font-weight: 400;
   font-size: 36px;
-  line-height: 49px;
+  line-height: 49px; */
 }
 .header .header__wrap .header__menu {
   width: 65%;

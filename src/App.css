@@ -1,4 +1,9 @@
 /* general */
+:root {
+  --blue: #1e47fffb;
+  --white: #ffffff;
+  --logo: rgba(18, 201, 157, 1);
+}
 a {
   text-decoration: none;
 }
@@ -11,6 +16,10 @@ ul,
 li {
   list-style: none;
   padding-inline-start: 0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 .run-line::after {
   content: "";
@@ -41,4 +50,14 @@ li {
 .zoom_image:hover {
   /* transform: translateY(-10px); */
   transform: scale(1.05);
+}
+.main-logo {
+  align-items: center;
+}
+.main-logo a {
+  color: var(--logo);
+  font-family: Ribeye;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
 }

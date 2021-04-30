@@ -13,7 +13,7 @@ import PopularPost from "./Main__scroll/PopularPost/PopularPost"
 Main.propTypes = {}
 
 function Main(props) {
-  // const titles = [
+  // const  = [
   //   {
   //     id: 1,
   //     title: "Top NodeJS Frameworks to use in 2021",
@@ -64,7 +64,7 @@ function Main(props) {
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi odio consequuntur qui sunt. Officia consequatur saepe suscipit placeat consequuntur. Quos esse soluta ab ut voluptates modi labore, qui voluptatum ea!"
     }
   ])
-  console.log(titleList)
+
   useEffect(() => {
     async function fetchtitleList() {
       try {
