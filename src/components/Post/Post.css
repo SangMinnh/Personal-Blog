@@ -1,8 +1,3 @@
-.active {
-  color: blue !important;
-  font-size: 30px;
-  border-bottom: 1px solid #333;
-}
 .post__avatar {
   border-radius: 70px;
   width: 50px;
@@ -10,6 +5,11 @@
   border: 1px black solid;
   overflow: hidden;
   margin-right: 10px;
+}
+.active {
+  color: blue !important;
+  font-size: 30px;
+  /* border-bottom: 1px solid #333; */
 }
 a i {
   color: black;
@@ -135,10 +135,16 @@ a i {
 .post__scroll {
   position: relative;
 }
+.fixed {
+  position: fixed;
+  top: 50px;
+  /* right: 0; */
+  overflow-y: scroll;
+}
 .navbar {
   position: fixed;
-  /* top: 0;
-  right: 0; */
+  top: 20;
+  overflow-y: scroll;
 }
 .navbar a {
   display: block;

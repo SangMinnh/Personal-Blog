@@ -11,6 +11,7 @@ import {
   scrollSpy,
   scroller
 } from "react-scroll"
+//
 
 Post.propTypes = {}
 
@@ -77,53 +78,68 @@ function Post(props) {
                   In this article, I want to review a few simple rules on how to
                   design better modal windows.
                 </div>
-                <div className="index" id="test1">
-                  1. What is Figma?
+                <div id="test1">
+                  <div className="index">1. What is Figma?</div>
+                  <div className="introduce">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quas nam velit exercitationem dolorum tempora, doloremque
+                    eaque dolor debitis perferendis. Quae nihil, recusandae quam
+                    officia cupiditate atque consequuntur placeat soluta
+                    facilis.
+                  </div>
+                  <div className="introduce">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quas nam velit exercitationem dolorum tempora, doloremque
+                    eaque dolor debitis perferendis. Quae nihil, recusandae quam
+                    officia cupiditate atque consequuntur placeat soluta
+                    facilis.
+                  </div>
+                  <div className="introduce">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quas nam velit exercitationem dolorum tempora, doloremque
+                    eaque dolor debitis perferendis. Quae nihil, recusandae quam
+                    officia cupiditate atque consequuntur placeat soluta
+                    facilis.
+                  </div>
+                  <div className="introduce">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quas nam velit exercitationem dolorum tempora, doloremque
+                    eaque dolor debitis perferendis. Quae nihil, recusandae quam
+                    officia cupiditate atque consequuntur placeat soluta
+                    facilis.
+                  </div>
                 </div>
-                <div className="introduce">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-                  nam velit exercitationem dolorum tempora, doloremque eaque
-                  dolor debitis perferendis. Quae nihil, recusandae quam officia
-                  cupiditate atque consequuntur placeat soluta facilis.
+                <div id="test2">
+                  <div className="index">2. Sounds Interesting</div>
+                  <div className="introduce">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quas nam velit exercitationem dolorum tempora, doloremque
+                    eaque dolor debitis perferendis. Quae nihil, recusandae quam
+                    officia cupiditate atque consequuntur placeat soluta
+                    facilis.
+                  </div>
                 </div>
-                <div className="introduce">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-                  nam velit exercitationem dolorum tempora, doloremque eaque
-                  dolor debitis perferendis. Quae nihil, recusandae quam officia
-                  cupiditate atque consequuntur placeat soluta facilis.
+                <div id="test3">
+                  <div className="index">3. Is It Free?</div>
+                  <div className="introduce">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quas nam velit exercitationem dolorum tempora, doloremque
+                    eaque dolor debitis perferendis. Quae nihil, recusandae quam
+                    officia cupiditate atque consequuntur placeat soluta
+                    facilis.
+                  </div>
                 </div>
-                <div className="introduce">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-                  nam velit exercitationem dolorum tempora, doloremque eaque
-                  dolor debitis perferendis. Quae nihil, recusandae quam officia
-                  cupiditate atque consequuntur placeat soluta facilis.
-                </div>
-                <div className="index" id="test2">
-                  2. Sounds Interesting
-                </div>
-                <div className="introduce">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-                  nam velit exercitationem dolorum tempora, doloremque eaque
-                  dolor debitis perferendis. Quae nihil, recusandae quam officia
-                  cupiditate atque consequuntur placeat soluta facilis.
-                </div>
-                <div className="index" id="test3">
-                  3. Is It Free?
-                </div>
-                <div className="introduce">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-                  nam velit exercitationem dolorum tempora, doloremque eaque
-                  dolor debitis perferendis. Quae nihil, recusandae quam officia
-                  cupiditate atque consequuntur placeat soluta facilis.
-                </div>
-                <div className="index" id="test4">
-                  4. Be careful with system-initiated modal windows
-                </div>
-                <div className="introduce">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-                  nam velit exercitationem dolorum tempora, doloremque eaque
-                  dolor debitis perferendis. Quae nihil, recusandae quam officia
-                  cupiditate atque consequuntur placeat soluta facilis.
+                <div id="test4">
+                  <div className="index">
+                    4. Be careful with system-initiated modal windows
+                  </div>
+                  <div className="introduce">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quas nam velit exercitationem dolorum tempora, doloremque
+                    eaque dolor debitis perferendis. Quae nihil, recusandae quam
+                    officia cupiditate atque consequuntur placeat soluta
+                    facilis.
+                  </div>
                 </div>
               </div>
               <div className="post__comment">
@@ -177,49 +193,61 @@ function Post(props) {
               </div>
             </div>
             <div className="post__scroll">
-              <nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
+              <ul className="fixed navbar" id="mainNav">
                 <h2>TABLE OF CONTENT</h2>
-                <Link
-                  activeClass="active"
-                  className="navigation__link"
-                  to="test1"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                >
-                  1. Khởi tạo Project
-                </Link>
-                <Link
-                  activeClass="active"
-                  className="navigation__link"
-                  to="test2"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                >
-                  2. Cast Media
-                </Link>
-                <Link
-                  activeClass="active"
-                  className="navigation__link"
-                  to="test3"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                >
-                  3. Is it free?
-                </Link>
-                <Link
-                  activeClass="active"
-                  className="navigation__link"
-                  to="test4"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                >
-                  4. Be careful with system-initiated modal windows
-                </Link>
-              </nav>
+                <li>
+                  <Link
+                    activeClass="active"
+                    className="test1"
+                    to="test1"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                  >
+                    1. Khởi tạo Project
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    activeClass="active"
+                    className="test2"
+                    to="test2"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                  >
+                    2. Cast Media
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    activeClass="active"
+                    className="test2"
+                    to="test3"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                  >
+                    3. Is it free?
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    activeClass="active"
+                    className="test"
+                    to="test4"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                  >
+                    4. Be careful with system-initiated modal windows
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
