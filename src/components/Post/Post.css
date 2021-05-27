@@ -8,8 +8,8 @@
 }
 .active {
   color: blue !important;
-  font-size: 30px;
-  /* border-bottom: 1px solid #333; */
+  /* font-size: 20px; */
+  border-left: 1px solid var(--logo);
 }
 a i {
   color: black;
@@ -37,7 +37,7 @@ a i {
   /* padding: 20px; */
 }
 .post__scroll {
-  /* background-color: yellow; */
+  font-weight: 600;
 }
 /*===================== post__info============ */
 .post__info {
@@ -73,6 +73,7 @@ a i {
 .post__detail {
   margin-top: 30px;
 }
+
 .post__detail .introduce {
   margin: 40px 0;
 }
@@ -82,7 +83,7 @@ a i {
 }
 /* ======post comment=========== */
 .post__comment {
-  margin-top: 60px;
+  margin-top: 160px;
 }
 .post__comment .response__input {
   display: flex;
@@ -135,18 +136,26 @@ a i {
 .post__scroll {
   position: relative;
 }
-.fixed {
-  position: fixed;
-  top: 50px;
-  /* right: 0; */
-  overflow-y: scroll;
+.absolute {
+  position: absolute !important;
+  bottom: 0;
 }
+
 .navbar {
   position: fixed;
   top: 20;
+  max-height: 90vh;
   overflow-y: scroll;
+  width: 25vw;
 }
 .navbar a {
   display: block;
   padding: 10px;
+  /* transition: all 0.1s linear; */
+}
+.navbar a:hover {
+  cursor: pointer;
+}
+.post__scroll .navbar .post__scroll-rec {
+  margin-top: 50px;
 }

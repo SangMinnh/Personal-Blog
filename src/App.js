@@ -15,6 +15,8 @@ import History from "./components/History/History"
 import Signin from "./components/Sign in/Signin"
 import Footer from "./components/Footer/Footer"
 import Post from "./components/Post/Post"
+import Save__list from "./components/SaveList/Save__list"
+import CreatePost from "./components/CreatePost/CreatePost"
 function App(props) {
   const user = [
     {
@@ -38,8 +40,13 @@ function App(props) {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={AboutUs} />
-          <Route path="/history" component={History} />
-          <Route path="/cate" component={Post} />
+          <Route path="/history" component={Save__list} />
+          <Route path="/posts/:id">
+            <Post></Post>
+          </Route>
+          <Route path="/cate">
+            <CreatePost></CreatePost>
+          </Route>
           {/* <Route path="/signin" component={Signin} /> */}
           <Route path="/">
             <Signin user={user} />

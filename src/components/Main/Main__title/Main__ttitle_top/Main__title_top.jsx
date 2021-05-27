@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import "./Main__title_top.css"
+import { Link } from "react-router-dom"
 
 Main__title_top.propTypes = {
   title__top_item: PropTypes.object
@@ -15,11 +16,9 @@ function Main__title_top(props) {
     <div className="title__top">
       <div className="title__top-wrap">
         <div className="title__top-background">
-          <img
-            className="zoom_image"
-            src={title__top_item.imageUrl}
-            alt=""
-          ></img>
+          <Link to="/post">
+            <img className="zoom_image" src={title__top_item.url} alt=""></img>
+          </Link>
         </div>
         <div className="title__top-info">
           <div className="info__top">

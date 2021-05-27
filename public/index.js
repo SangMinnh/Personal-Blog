@@ -6,19 +6,4 @@ a.forEach(function (item) {
   })
 })
 
-window.onscroll = function () {
-  myFunction()
-}
-
-var navbar = document.getElementById("mainNav")
-
-var h = document.querySelector("body")
-
-console.log(h.offsetHeight)
-function myFunction() {
-  if (window.pageYOffset < h.offsetHeight - 300 - 800) {
-    navbar.classList.add("fixed")
-  } else {
-    navbar.classList.remove("fixed")
-  }
-}
+// console.log(h.offsetHeight)
