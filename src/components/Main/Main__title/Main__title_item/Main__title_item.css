@@ -40,6 +40,7 @@
 }
 .title__item .title__item-wrap .title__item-info .info__title {
   font-size: 30px;
+  min-height: 120px;
 }
 .title__item .title__item-wrap .title__item-info .info__readmore {
   font-size: 18px;

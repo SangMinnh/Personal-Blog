@@ -1,0 +1,25 @@
+.savelist {
+  margin-top: 50px;
+}
+.savelist h3 {
+  font-size: 30px;
+}
+.savepost {
+  width: 80%;
+  font-size: 20px;
+  display: flex;
+  margin-top: 30px;
+}
+.savepost__info {
+  width: 60%;
+}
+.savepost__image {
+  width: 30%;
+  overflow: hidden;
+  height: 100%;
+}
+.savepost__image img {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+}

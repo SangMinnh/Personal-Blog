@@ -1,0 +1,161 @@
+.post__avatar {
+  border-radius: 70px;
+  width: 50px;
+  height: 50px;
+  border: 1px black solid;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.active {
+  color: blue !important;
+  /* font-size: 20px; */
+  border-left: 1px solid var(--logo);
+}
+a i {
+  color: black;
+}
+.post__avatar img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.name {
+  font-weight: 600;
+  font-size: 21px;
+}
+.post {
+  margin-top: 50px;
+
+  /* background-color: var(--blue); */
+  padding-top: 10px;
+  font-family: Montserrat, serif;
+}
+.post__wrap {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 10px;
+  /* padding: 20px; */
+}
+.post__scroll {
+  font-weight: 600;
+}
+/*===================== post__info============ */
+.post__info {
+  padding-right: 30px;
+}
+.post__info .post__title {
+  font-size: 28px;
+}
+
+/* =======post author=======*/
+.post__info .post__author {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.post__info .post__author .post__author-info {
+  display: flex;
+}
+
+.post__info .post__author .post__author-share {
+  min-width: 20%;
+}
+.post__info .post__author .post__author-share .list__share {
+  display: flex;
+  justify-content: space-around;
+}
+.post__info .post__author .post__author-share .list__share .list__share-item i {
+  color: black;
+  font-size: 21px;
+}
+
+/* ==========post detail======== */
+.post__detail {
+  margin-top: 30px;
+}
+
+.post__detail .introduce {
+  margin: 40px 0;
+}
+.post__detail .index {
+  margin: 20px 0;
+  font-weight: 700;
+}
+/* ======post comment=========== */
+.post__comment {
+  margin-top: 160px;
+}
+.post__comment .response__input {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.post__comment .response__input input:focus {
+  outline: none;
+}
+.post__comment .response__input .comment {
+  width: 100%;
+  font-size: 20px;
+  outline: none;
+  background-color: rgba(244, 244, 244, 1);
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.post__comment .all__response {
+  margin-top: 80px;
+}
+.post__comment .response__post {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.post__comment .response__post .response__post-info {
+  background-color: rgba(244, 244, 244, 1);
+  width: 100%;
+  font-size: 20px;
+  border-radius: 50px;
+  padding: 20px;
+}
+.post__comment .response__post .response__post-info .detail {
+  font-size: 18px;
+}
+
+.post__right {
+  width: 90%;
+}
+.post__right .response__post-react {
+  margin-left: 20px;
+  display: flex;
+}
+.post__right .response__post-react a {
+  margin: 10px 15px;
+}
+
+/* ==================post scroll==================== */
+.post__scroll {
+  position: relative;
+}
+.absolute {
+  position: absolute !important;
+  bottom: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 20;
+  max-height: 90vh;
+  overflow-y: scroll;
+  width: 25vw;
+}
+.navbar a {
+  display: block;
+  padding: 10px;
+  /* transition: all 0.1s linear; */
+}
+.navbar a:hover {
+  cursor: pointer;
+}
+.post__scroll .navbar .post__scroll-rec {
+  margin-top: 50px;
+}
