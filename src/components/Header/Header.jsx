@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import "./Header.css"
 import Main from "../Main/Main"
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 import AboutUs from "../AboutUs/AboutUs"
 
 Header.propTypes = {}
@@ -41,7 +41,7 @@ function Header(props) {
               </ul>
             </div>
             <div class="header__menu-sign">
-              <Link to="/signin">Sign in</Link>
+              <Link to="/auth">SIGN IN</Link>
             </div>
           </div>
         </div>

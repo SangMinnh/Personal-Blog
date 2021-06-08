@@ -29,7 +29,7 @@ h3 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-.run-line::after {
+.rrun-line::after {
   content: "";
   width: 10%;
   height: 1px;
@@ -45,7 +45,7 @@ h3 {
   opacity: 0;
   transition: all 0.3s linear;
 }
-.run-line:hover::after {
+.rrun-line:hover::after {
   /* transform: scale(); */
   width: 100%;
   /* left: 0; */
