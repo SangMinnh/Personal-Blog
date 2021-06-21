@@ -1,0 +1,71 @@
+/* general */
+:root {
+  --blue: #1e47fffb;
+  --white: #ffffff;
+  --logo: rgba(18, 201, 157, 1);
+}
+a {
+  text-decoration: none;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 100px;
+}
+ul,
+li,
+h3 {
+  list-style: none;
+  padding-inline-start: 0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.rrun-line::after {
+  content: "";
+  width: 10%;
+  height: 1px;
+  bottom: -5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition: width 0.6s;
+  transition: width 0.6s;
+  background: currentColor;
+  margin: 0 auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.rrun-line:hover::after {
+  /* transform: scale(); */
+  width: 100%;
+  /* left: 0; */
+  visibility: visible;
+  opacity: 1;
+}
+.zoom_image {
+  transition: all 0.3s linear;
+}
+.zoom_image:hover {
+  /* transform: translateY(-10px); */
+  transform: scale(1.05);
+}
+.main-logo {
+  align-items: center;
+}
+.main-logo a {
+  color: var(--logo);
+  font-family: "Monoton", cursive;
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 60px;
+}
