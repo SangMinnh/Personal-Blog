@@ -220,7 +220,7 @@ li:hover a {
   content: "";
   height: 3.5rem;
   position: absolute;
-  left: 130px;
+  left: 110px;
   right: -30px;
   background-color: transparent;
   transform: translateY(-100%);

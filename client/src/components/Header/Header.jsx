@@ -99,9 +99,9 @@ const Header = () => {
             <i class="far fa-bell big"></i>
             <i class="fas fa-sort-down big" style={{ paddingBottom: "8px" }}>
             <ul class="dropdownList">
-            <Link class="dropdownItem" to="/admin">
-                <span class="dropdownText">Settings</span>
-                <i class="fa fa-cog small"></i>
+              <Link class="dropdownItem" onClick={()=> (history.push("/admin"))}>
+                <span class="dropdownText">Content</span>
+                <i class="fa fa-edit small"></i>
               </Link>
               <Link class="dropdownItem" onClick={logout}>
                 <span class="dropdownText">Logout</span>
@@ -121,7 +121,7 @@ const Header = () => {
             </Button> */}
           </div>
         ) : (
-          <Link className="signIn" to="/auth">Sign In</Link>
+          <Link className="signIn" onClick={()=> (history.push("/auth"))}>Sign In</Link>
         )}
             
           </div>

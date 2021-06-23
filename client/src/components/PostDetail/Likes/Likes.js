@@ -8,11 +8,28 @@ const Likes = ({ id, user }) => {
   const post = useSelector(state =>
     id ? state.posts.posts.find(message => message._id === id) : null
   )
+
   const [active, setActive] = useState(() => {
-    return post.likes.find(
+    return post?.likes?.find(
       like => like === (user?.result?.googleId || user?.result?._id)
     )
   })
+
+  if (!user) {
+    return (
+      <div className="likes">
+        <Heart
+          style={{ width: "1.3rem" }}
+          isActive={false}
+          animationScale={1.2}
+          animationTrigger="both"
+          animationDuration={0.2}
+          className="customHeart"
+        />
+        <div className="countLike">{post.likes.length}</div>
+      </div>
+    )
+  }
 
   if (post?.likes?.length > 0) {
     return post.likes.find(

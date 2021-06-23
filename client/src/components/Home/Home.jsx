@@ -70,8 +70,8 @@ const Home = () => {
               placeholder="Search..."
               className="searchTxt">
             </input>
-            <button type="submit" className="submitBtn">
-              <i className="fa fa-search"></i>
+            <button type="submit" className="submitSearch">
+              <i className="fa fa-search iconSearch"></i>
             </button>
           </form>
           <div className="categoriesList">
@@ -81,8 +81,32 @@ const Home = () => {
                          <div className="itemName">{category.categoryName}</div>
                          <div className="count">{category.count}</div>
                        </div>))}
+          </div>
+          <div className="topPosts">
+            <h3>POPULAR POST</h3>
+          
+            <div className="popular">
+              <div className="topNumber">01</div>
+              <div className="topTitle">Tây Ban Nha trước nguy cơ chia tay Euro 2020</div>
+            </div>
+            <div className="popular">
+              <div className="topNumber">02</div>
+              <div className="topTitle">Werner và Sane đối mặt bước ngoặt lớn ở tuyển Đức</div>
+            </div>
+            <div className="popular">
+              <div className="topNumber">03</div>
+              <div className="topTitle">Felix là chiếc lò xo nén chặt của Bồ Đào Nha</div>
+            </div>
+            <div className="popular">
+              <div className="topNumber">04</div>
+              <div className="topTitle">Mourinho: 'De Bruyne gây áp lực với tôi'</div>
+            </div>
+            <div className="popular">
+              <div className="topNumber">05</div>
+              <div className="topTitle">Trường hợp đặc biệt của Australia ở vòng loại World Cup châu Á</div>
+            </div>
            
-           
+            
           </div>
         </div>
       </div>
