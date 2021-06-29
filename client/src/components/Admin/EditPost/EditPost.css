@@ -1,0 +1,127 @@
+.editPost {
+  margin-top: 60px;
+  padding: 0 100px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.control {
+  width: 100%;
+  height: 70px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.label {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.addIconBox {
+  border: solid 2px #12c99d;
+  padding: 20px;
+  position: relative;
+}
+
+.control .label .addIconBox i {
+  color: #12c99d;
+  font-size: 28px;
+  background-color: #fff;
+  position: absolute;
+  top: -5px;
+}
+
+.contentLabel {
+  margin-left: 25px;
+  align-self: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #12c99d;
+}
+
+.submitPost {
+  align-self: center;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  background-color: #12c99d;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.form {
+  max-width: 100%;
+  padding: 0;
+}
+
+.txtField {
+  padding: 5px 0 5px 15px;
+  border-left: 3px solid #12c99d;
+  border-left-color: #e5e5e5;
+  margin: 30px 0;
+}
+
+.txtField input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.txtField input:focus-visible {
+  outline-color: #12c99d;
+  border-radius: 10px;
+  background-color: #12c99e18;
+}
+
+.file {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+input[type="file" i] {
+  font-size: 18px;
+  align-self: center;
+}
+
+.chip {
+  padding: 5px 0 5px 15px;
+  border-left: 3px solid #12c99d;
+  border-left-color: #e5e5e5;
+  margin: 20px 0;
+}
+/* 
+.WAMuiChipInput-inputRoot-2.WAMuiChipInput-outlined-5,
+.WAMuiChipInput-inputRoot-2.WAMuiChipInput-filled-7 {
+  box-sizing: border-box;
+  border-radius: 10px;
+} */
+
+.detail {
+  width: 100%;
+  font-size: inherit;
+}
+
+.contentArea-0-3-8 > textarea {
+  height: 600px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500px;
+}
+
+.preview-0-3-9 > p,
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.preview-0-3-9 > p {
+  font-size: 18px;
+}

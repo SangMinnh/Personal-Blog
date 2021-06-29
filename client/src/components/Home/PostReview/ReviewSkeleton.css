@@ -1,0 +1,187 @@
+.reviewSkeleton {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.reviewSkeleton div {
+  font-family: "Montserrat", sans-serif;
+}
+
+.topContentLoading div {
+  margin-top: 10px;
+  border-radius: 4px;
+  animation: wave 1.5s infinite;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+@keyframes wave {
+  from {
+    background-color: #f5f5f5;
+  }
+  to {
+    background-color: #cfcccc;
+  }
+}
+
+/* ---------------BigPost------------ */
+
+.posts .reviewSkeleton:first-child .content .topContentLoading div {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.posts .reviewSkeleton:first-child .titleLoading {
+  font-size: 35px;
+  height: 40px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: transparent;
+}
+
+.posts .reviewSkeleton:first-child {
+  grid-area: 1/1 / span 1 / span 2;
+  display: flex;
+  flex-direction: row;
+}
+
+.posts .reviewSkeleton:first-child .backgroundLoading {
+  flex: 60%;
+  width: 60%;
+  height: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.posts .reviewSkeleton:first-child .background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.posts .reviewSkeleton:first-child .content {
+  padding-left: 20px;
+  flex: 40%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.posts .reviewSkeleton:first-child .opening {
+  display: -webkit-box;
+  color: transparent;
+  /* max-height: 30%; */
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ------Small Post------- */
+
+.titleLoading {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 25px;
+  color: transparent;
+}
+
+.opening {
+  display: none;
+  line-height: 22px;
+}
+
+.moreLoading {
+  border-radius: 4px;
+  animation: wave 2s infinite;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  margin-top: 18px;
+  color: transparent;
+  width: fit-content;
+}
+
+.backgroundLoading {
+  width: 100%;
+  max-height: 50%;
+  min-height: 50%;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.backgroundLoading::after {
+  display: block;
+  content: "";
+  /* 16:9 aspect ratio */
+  padding-bottom: 66.66%;
+}
+
+.zoom_image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 64em) {
+  .reviewSkeleton {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+  }
+
+  .backgroundLoading {
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 40%;
+    /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+  }
+
+  .background::after {
+    display: block;
+    content: "";
+    /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
+  }
+
+  .zoom_image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .topContent div {
+    margin-top: 0;
+  }
+
+  .opening {
+    display: none;
+  }
+}
