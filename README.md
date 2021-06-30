@@ -9,6 +9,7 @@
 * [Feature](#feature)
 * [Screen Shot](#screen-shot)
 * [Setup](#setup)
+* [Packages Used](#packages-used)
 
 ## Introduction
 
@@ -49,5 +50,20 @@ The app is called **Minidum** which is the ultimate platform for learning and sh
 
 ![detail1](https://user-images.githubusercontent.com/50938814/123893204-2c7a7500-d986-11eb-9409-d1dcc6174b7f.PNG)
 ![DEL2](https://user-images.githubusercontent.com/50938814/123893331-6481b800-d986-11eb-87b0-374eb3030c92.PNG)
+
+## Setup
+
+- run ```npm i && npm start``` for both client and server side to start the app.
+
+## Packages Used
+
+- [express](https://www.npmjs.com/package/express)
+- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+- [json-server](https://www.npmjs.com/package/json-server)
+- [react-redux](https://react-redux.js.org/)
+- [axios](https://github.com/axios/axios)
+- [Material UI](https://material-ui.com/)
+- [mongoose](https://www.npmjs.com/package/mongoose)
+- [cors](https://www.npmjs.com/package/cors)
 
 
